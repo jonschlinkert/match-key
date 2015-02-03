@@ -1,6 +1,6 @@
 # match-key [![NPM version](https://badge.fury.io/js/match-key.svg)](http://badge.fury.io/js/match-key)
 
-> Get a property from an object with the first matching key, using glob patterns, regex or a string to get a property from an object.
+> Get a property from an object with the first key that matches the given glob pattern, function, regex or string.
 
 ## Install with [npm](npmjs.org)
 
@@ -26,8 +26,6 @@ matchKey(object, pattern, options);
 
 ### Valid patterns
 
-
-
 **String:**
 
 ```js
@@ -35,7 +33,7 @@ matchKey({a: 'b', c: 'd'}, 'a');
 //=> {a: 'b'}
 ```
 
-**String:**
+**Function:**
 
 ```js
 matchKey({a: 'b', c: 'd'}, function (key) {
@@ -44,7 +42,7 @@ matchKey({a: 'b', c: 'd'}, function (key) {
 //=> {'a': 'b'}
 ```
 
-**String:**
+**Glob pattern:**
 
 ```js
 matchKey(o, '*');
@@ -54,7 +52,7 @@ matchKey(o, '*c');
 //=> {c: 'd'}
 ```
 
-**String:**
+**Regular expression:**
 
 ```js
 matchKey({a: 'b', aa: 'bb'}, /\w{2}/);

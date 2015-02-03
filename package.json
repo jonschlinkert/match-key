@@ -1,6 +1,6 @@
 {
   "name": "match-key",
-  "description": "Get a property from an object with the first matching key, using glob patterns, regex or a string to get a property from an object.",
+  "description": "Get a property from an object with the first key that matches the given glob pattern, function, regex or string.",
   "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/match-key",
   "author": {
