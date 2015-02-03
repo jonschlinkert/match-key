@@ -2,13 +2,13 @@
 
 > Get a property from an object with the first key that matches the given glob pattern, function, regex or string.
 
+This returns one property. If you want to filter an object use [filter-object].
+
 ## Install with [npm](npmjs.org)
 
 ```bash
 npm i match-key --save
 ```
-
-This returns one property. If you want to filter an object use [filter-object].
 
 ## Usage
 
