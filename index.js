@@ -16,12 +16,10 @@ module.exports = function matchKey(obj, pattern, options) {
 
   var isMatch = matcher(pattern, options);
   for (var key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      if (isMatch(key)) {
-        var res = {};
-        res[key] = obj[key];
-        return res;
-      }
+    if (isMatch(key)) {
+      var res = {};
+      res[key] = obj[key];
+      return res;
     }
   }
   return null;
