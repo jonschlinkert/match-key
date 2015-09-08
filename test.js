@@ -7,8 +7,9 @@
 
 'use strict';
 
+require('mocha');
+require('should');
 var assert = require('assert');
-var should = require('should');
 var matchKey = require('./');
 
 var o = {a: 'b', c: 'd', ee: 'f', f: 'i', '.g': 'h'};
