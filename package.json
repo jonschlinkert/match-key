@@ -1,23 +1,14 @@
 {
   "name": "match-key",
   "description": "Get a property from an object with the first key that matches the given glob pattern, function, regex or string.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/jonschlinkert/match-key",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/match-key.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/match-key",
   "bugs": {
     "url": "https://github.com/jonschlinkert/match-key/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/match-key/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -28,8 +19,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "is-match": "^0.4.0"
+  },
   "devDependencies": {
-    "helper-reflinks": "^1.0.0",
     "mocha": "*",
     "should": "*"
   },
@@ -50,7 +43,14 @@
     "regular expression",
     "wildcard"
   ],
-  "dependencies": {
-    "is-match": "^0.1.0"
+  "verb": {
+    "related": {
+      "list": [
+        "is-match",
+        "micromatch",
+        "has-glob",
+        "is-glob"
+      ]
+    }
   }
 }
